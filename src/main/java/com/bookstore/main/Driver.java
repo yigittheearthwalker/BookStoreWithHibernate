@@ -68,7 +68,7 @@ public class Driver {
 		Session session = HibernateUtils.getSessionFactory().openSession();
 		Transaction transaction = session.beginTransaction();
 		
-		Book book = session.get(Book.class, 3);
+		Book book = session.get(Book.class, "B0003");
 		System.out.println(book.getFullName() + " Is the book");
 		
 		
