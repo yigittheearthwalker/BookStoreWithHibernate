@@ -44,7 +44,7 @@ public class CustomIDGenerator implements IdentifierGenerator, Configurable{
                 return id;
             }
         }
-   
+        
 		String seqValue = ((Number) Session.class.cast(session)
                 .createNativeQuery(sequenceCallSyntax)
                 .uniqueResult()).toString();

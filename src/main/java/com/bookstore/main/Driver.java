@@ -10,8 +10,8 @@ import com.bookstore.entities.Writer;
 
 public class Driver {
 	public static void main(String[] args) {
-		//hibernatepersist();
-		hibernateGet();
+		hibernatepersist();
+		//hibernateGet();
 	}
 	public static void hibernatepersist() {
 		Session session = HibernateUtils.getSessionFactory().openSession();
