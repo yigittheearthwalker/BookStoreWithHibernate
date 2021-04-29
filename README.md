@@ -1,6 +1,6 @@
 # BookStoreWithHibernate
  
- A reinterpretation of my previous example BookStoreWithJDBC
+ A reinterpretation of my previous exercise BookStoreWithJDBC
  
  It covers persist and get opertions for three entities that are inherited from one MappedSuperclass
  
