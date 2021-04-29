@@ -10,24 +10,8 @@ import com.bookstore.entities.Writer;
 
 public class Driver {
 	public static void main(String[] args) {
-		hibernatepersist();
-		//hibernateGet();
-		//publisherPersist();
-	}
-	public static void publisherPersist() {
-		Session session = HibernateUtils.getSessionFactory().openSession();
-		Transaction transaction = session.beginTransaction();
-
-		Publisher publisher = new Publisher();
-		publisher.setFullName("İletişim Yayınları");
-		publisher.setNumberOfBooks(0);
-		
-		session.persist(publisher);
-		
-		
-		transaction.commit();
-		session.close();
-		HibernateUtils.getSessionFactory().close();
+		//hibernatepersist();
+		hibernateGet();
 	}
 	public static void hibernatepersist() {
 		Session session = HibernateUtils.getSessionFactory().openSession();
@@ -68,7 +52,7 @@ public class Driver {
 		Session session = HibernateUtils.getSessionFactory().openSession();
 		Transaction transaction = session.beginTransaction();
 		
-		Book book = session.get(Book.class, "B0003");
+		Book book = session.get(Book.class, "B0006");
 		System.out.println(book.getFullName() + " Is the book");
 		
 		
