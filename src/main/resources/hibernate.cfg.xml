@@ -5,9 +5,9 @@
 <hibernate-configuration>
     <session-factory>
     	<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/bookStore</property>
-		<property name="hibernate.connection.username">postgres</property>
-		<property name="hibernate.connection.password">vbvb</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/bookStore</property>"Create This DB or your own DB"
+		<property name="hibernate.connection.username">put your own username</property>
+		<property name="hibernate.connection.password">put your own password</property>
 		
 		<mapping class="com.bookstore.entities.Publisher"/>
 		<mapping class="com.bookstore.entities.Writer"/>
